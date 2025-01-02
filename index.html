@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -68,10 +68,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-38769d6d5360e4b0df98504e5036f89d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -180,14 +180,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#r-or-python" id="toc-r-or-python" class="nav-link active" data-scroll-target="#r-or-python"><span class="header-section-number">1</span> R or Python?</a></li>
+  <li><a href="#r-python-or-other" id="toc-r-python-or-other" class="nav-link active" data-scroll-target="#r-python-or-other"><span class="header-section-number">1</span> R, Python or other?</a></li>
   <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites"><span class="header-section-number">2</span> Prerequisites</a>
   <ul class="collapse">
   <li><a href="#hardware" id="toc-hardware" class="nav-link" data-scroll-target="#hardware"><span class="header-section-number">2.1</span> Hardware</a></li>
   <li><a href="#software" id="toc-software" class="nav-link" data-scroll-target="#software"><span class="header-section-number">2.2</span> Software</a>
   <ul class="collapse">
-  <li><a href="#r" id="toc-r" class="nav-link" data-scroll-target="#r"><span class="header-section-number">2.2.1</span> R</a></li>
-  <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python"><span class="header-section-number">2.2.2</span> Python</a></li>
+  <li><a href="#r-1" id="toc-r-1" class="nav-link" data-scroll-target="#r-1"><span class="header-section-number">2.2.1</span> R</a></li>
+  <li><a href="#python-1" id="toc-python-1" class="nav-link" data-scroll-target="#python-1"><span class="header-section-number">2.2.2</span> Python</a></li>
   </ul></li>
   <li><a href="#command-line-experience" id="toc-command-line-experience" class="nav-link" data-scroll-target="#command-line-experience"><span class="header-section-number">2.3</span> Command-line experience</a></li>
   <li><a href="#data-science-experience-prerequisites" id="toc-data-science-experience-prerequisites" class="nav-link" data-scroll-target="#data-science-experience-prerequisites"><span class="header-section-number">2.4</span> Data science experience prerequisites</a></li>
@@ -217,14 +217,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>A module teaching how to use data science to solve transport problems.</p>
-<section id="r-or-python" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> R or Python?</h1>
-<p>A common question that arises when starting new digital projects is ‘which language should I use?’.</p>
-<p>The answer for most people taking this course will be R, because it is the language we will be teaching in, and the language in which the module team has the most experience.</p>
-<p>You can use Python, and we are working on Python examples, but the support for Python should be considered work in progress.</p>
-<p>If you do choose to use Python, you will be expected to manage your own Python environment, and to be able to translate the R code examples into Python.</p>
-<p>If you are feeling very adventurous, you could try using Julia or another language, but you will be on your own in terms of support.</p>
+<p>A module on using data science to solve transport problems.</p>
+<section id="r-python-or-other" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> R, Python or other?</h1>
+<p>While the focus of the module is on methods that can be implemented in many languages, we expect most people taking this course will use R for the practicals and for the end our course project. We use R because it is hard to beat in terms of a data science environment <em>with batteries included</em>, with many mature packages for data manipulation, visualisation, and statistical analysis available within seconds, without having to worry about package conflicts or managing environments. R is also the language with which the module team has the most experience.</p>
+<p>Python is another excellent choice for transport data science, and many of the example code chunks we provide in R have been ported to Python examples, as illustrated below, which shows how to load the R package <code>{sf}</code> and the equivalent Python package <code>{geopandas}</code>.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Python</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>geo_data <span class="ot">=</span> <span class="fu">read_sf</span>(<span class="st">"geo_data.gpkg"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> geopandas <span class="im">as</span> gpd</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>geo_data <span class="op">=</span> gpd.read_file(<span class="st">"geo_data.gpkg"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<p>, but the support for Python should be considered work in progress. If you do choose to use Python, you will be expected to manage your own Python environment, and to be able to translate the R code examples into Python.</p>
+<p>If you are feeling adventurous, you could try using Julia, JavaScript/TypeScript (e.g.&nbsp;via Observable) or another language, but you will be on your own in terms of support.</p>
 </section>
 <section id="prerequisites" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Prerequisites</h1>
@@ -236,8 +248,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="2.2" class="anchored" data-anchor-id="software"><span class="header-section-number">2.2</span> Software</h2>
 <p>Although you are free to use any software for the course, the emphasis on reproducibility and interactive data science means that popular popular and established data science languages such as R and Python are recommended.</p>
 <p>The teaching will be delivered primarily in R, with some Python code snippets and examples. Unless you have a good reason to use Python, we recommend you use R for the course.</p>
-<section id="r" class="level3" data-number="2.2.1">
-<h3 data-number="2.2.1" class="anchored" data-anchor-id="r"><span class="header-section-number">2.2.1</span> R</h3>
+<section id="r-1" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="r-1"><span class="header-section-number">2.2.1</span> R</h3>
 <p>You should have the latest stable release of R (4.3.0 or above) and RStudio (recommended) or another IDE such as VS Code (if you have prior experience with it) installed on your computer.</p>
 <ul>
 <li>R from <a href="https://cran.r-project.org/">cran.r-project.org</a></li>
@@ -246,15 +258,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>To install all the dependencies for the module, run the following command in the R console:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">"remotes"</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>)) {</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">install.packages</span>(<span class="st">"remotes"</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"itsleeds/tds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">"remotes"</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>)) {</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">install.packages</span>(<span class="st">"remotes"</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"itsleeds/tds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>See <a href="https://itsleeds.github.io/rrsrr/introduction.html#installing-r-and-rstudio">Section 1.5 of the online guide Reproducible Road Safety Research with R</a> for instructions on how to install key packages we will use in the module.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 </section>
-<section id="python" class="level3" data-number="2.2.2">
-<h3 data-number="2.2.2" class="anchored" data-anchor-id="python"><span class="header-section-number">2.2.2</span> Python</h3>
+<section id="python-1" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="python-1"><span class="header-section-number">2.2.2</span> Python</h3>
 <p>If you choose to use Python, you should be able to install it and manage your own Python environment, including installing packages and dealing with package conflicts. If you use Python we recommend using <code>pixi</code>, which can manage both R and Python environments.</p>
 </section>
 </section>
@@ -361,8 +373,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -473,7 +483,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
