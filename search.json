@@ -129,16 +129,6 @@
     "text": "How to come up with a good research question\n\nThink about the data you have access to\nThink about the problems you want to solve\nThink about the methods you want to use and skills you want to learn\nThink about how the final report will look and hold-together\n\n\nHow much potential is there for cycling across the transport network?\n\n\n\nHow can travel to schools be made safer?\n\n\nHow can hospitals encourage visitors to get there safely?\n\n\nWhere’s the best place to build electric car charging points?\nSee openstreetmap.org or search for other open access datasets for more ideas"
   },
   {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "Rows: 11 Columns: 5\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (3): summary, description, location\ndbl  (1): duration\ndate (1): date\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.",
-    "crumbs": [
-      "Schedule"
-    ]
-  },
-  {
     "objectID": "marking-criteria.html",
     "href": "marking-criteria.html",
     "title": "Marking Criteria",
