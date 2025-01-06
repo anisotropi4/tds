@@ -133,7 +133,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "The timetable below is a user-friently representation of the timetable for the module. See timetable.leeds.ac.uk for the official timetable. If you spot any discrepancies, please let us know.",
+    "text": "The timetable below is a user-friently representation of the timetable for the module (see github for .csv and .ics versions). See timetable.leeds.ac.uk for the official timetable. If you spot any discrepancies, please let us know.",
     "crumbs": [
       "Schedule"
     ]
