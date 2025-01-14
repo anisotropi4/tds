@@ -346,23 +346,18 @@ www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</code></pre>
 <pre><code>Attempt downloading from: https://data.dft.gov.uk/road-accidents-safety-data/dft-road-casualty-statistics-collision-2019.csv</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Data saved at /tmp/Rtmp6lUUg2/dft-road-casualty-statistics-collision-2019.csv</code></pre>
+<pre><code>Data saved at /tmp/Rtmp8ul1B1/dft-road-casualty-statistics-collision-2019.csv</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Reading in: </code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/tmp/Rtmp6lUUg2/dft-road-casualty-statistics-collision-2019.csv</code></pre>
+<pre><code>/tmp/Rtmp8ul1B1/dft-road-casualty-statistics-collision-2019.csv</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>date and time columns present, creating formatted datetime column</code></pre>
 </div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning in format_stats19(x, type = "Accident"): NAs introduced by coercion
-Warning in format_stats19(x, type = "Accident"): NAs introduced by coercion
-Warning in format_stats19(x, type = "Accident"): NAs introduced by coercion</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>ca <span class="ot">=</span> <span class="fu">get_stats19</span>(<span class="at">year =</span> <span class="dv">2019</span>, <span class="at">type =</span> <span class="st">"cas"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>ca <span class="ot">=</span> <span class="fu">get_stats19</span>(<span class="at">year =</span> <span class="dv">2019</span>, <span class="at">type =</span> <span class="st">"cas"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Files identified: dft-road-casualty-statistics-casualty-2019.csv</code></pre>
 </div>
@@ -373,33 +368,38 @@ Warning in format_stats19(x, type = "Accident"): NAs introduced by coercion</cod
 <pre><code>Attempt downloading from: https://data.dft.gov.uk/road-accidents-safety-data/dft-road-casualty-statistics-casualty-2019.csv</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Data saved at /tmp/Rtmp6lUUg2/dft-road-casualty-statistics-casualty-2019.csv</code></pre>
+<pre><code>Data saved at /tmp/Rtmp8ul1B1/dft-road-casualty-statistics-casualty-2019.csv</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: The following named parsers don't match the column names:
-accident_severity, carriageway_hazards, date, day_of_week,
-did_police_officer_attend_scene_of_accident, first_road_class,
-first_road_number, junction_control, junction_detail, Latitude,
-light_conditions, local_authority_district, local_authority_highway,
+accident_severity, carriageway_hazards, collision_index, collision_reference,
+collision_year, date, day_of_week, did_police_officer_attend_scene_of_accident,
+did_police_officer_attend_scene_of_collision, enhanced_collision_severity,
+first_road_class, first_road_number, junction_control, junction_detail,
+latitude, legacy_collision_severity, light_conditions,
+local_authority_district, local_authority_highway,
 local_authority_ons_district, location_easting_osgr, location_northing_osgr,
-longitude, lsoa_of_accident_location, number_of_casualties, number_of_vehicles,
-pedestrian_crossing_human_control, pedestrian_crossing_physical_facilities,
-police_force, road_surface_conditions, road_type, second_road_class,
-second_road_number, special_conditions_at_site, speed_limit, time,
-trunk_road_flag, urban_or_rural_area, weather_conditions, vehicle_text,
-vehicle_type, age_band_of_driver, age_of_driver, age_of_vehicle,
-driver_home_area_type, driver_imd_decile, engine_capacity_cc,
-first_point_of_impact, generic_make_model, hit_object_in_carriageway,
-hit_object_off_carriageway, journey_purpose_of_driver, junction_location,
-propulsion_code, sex_of_driver, skidding_and_overturning,
-towing_and_articulation, vehicle_direction_from, vehicle_direction_to,
-vehicle_leaving_carriageway, vehicle_left_hand_drive,
-vehicle_location_restricted_lane, vehicle_manoeuvre</code></pre>
+longitude, lsoa_of_accident_location, lsoa_of_collision_location,
+number_of_casualties, number_of_vehicles, pedestrian_crossing_human_control,
+pedestrian_crossing_physical_facilities, police_force, road_surface_conditions,
+road_type, second_road_class, second_road_number, special_conditions_at_site,
+speed_limit, time, trunk_road_flag, urban_or_rural_area, weather_conditions,
+adjusted_serious, adjusted_slight, injury_based, accident_ref_no,
+effective_date_of_change, previously_published_value, replacement_value,
+variable, age_band_of_driver, age_of_driver, age_of_vehicle, dir_from_e,
+dir_from_n, dir_to_e, dir_to_n, driver_distance_banding, driver_home_area_type,
+driver_imd_decile, engine_capacity_cc, escooter_flag, first_point_of_impact,
+generic_make_model, hit_object_in_carriageway, hit_object_off_carriageway,
+journey_purpose_of_driver, junction_location, lsoa_of_driver, propulsion_code,
+sex_of_driver, skidding_and_overturning, towing_and_articulation,
+vehicle_direction_from, vehicle_direction_to, vehicle_leaving_carriageway,
+vehicle_left_hand_drive, vehicle_location_restricted_lane, vehicle_manoeuvre,
+vehicle_type</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning in asMethod(object): NAs introduced by coercion</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>ve <span class="ot">=</span> <span class="fu">get_stats19</span>(<span class="at">year =</span> <span class="dv">2019</span>, <span class="at">type =</span> <span class="st">"veh"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>ve <span class="ot">=</span> <span class="fu">get_stats19</span>(<span class="at">year =</span> <span class="dv">2019</span>, <span class="at">type =</span> <span class="st">"veh"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Files identified: dft-road-casualty-statistics-vehicle-2019.csv</code></pre>
 </div>
@@ -410,20 +410,21 @@ vehicle_location_restricted_lane, vehicle_manoeuvre</code></pre>
 <pre><code>Attempt downloading from: https://data.dft.gov.uk/road-accidents-safety-data/dft-road-casualty-statistics-vehicle-2019.csv</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Data saved at /tmp/Rtmp6lUUg2/dft-road-casualty-statistics-vehicle-2019.csv</code></pre>
+<pre><code>Data saved at /tmp/Rtmp8ul1B1/dft-road-casualty-statistics-vehicle-2019.csv</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: The following named parsers don't match the column names: accident_severity, carriageway_hazards, date, day_of_week, did_police_officer_attend_scene_of_accident, first_road_class, first_road_number, junction_control, junction_detail, Latitude, light_conditions, local_authority_district, local_authority_highway, local_authority_ons_district, location_easting_osgr, location_northing_osgr, longitude, lsoa_of_accident_location, number_of_casualties, number_of_vehicles, pedestrian_crossing_human_control, pedestrian_crossing_physical_facilities, police_force, road_surface_conditions, road_type, second_road_class, second_road_number, special_conditions_at_site, speed_limit, time, trunk_road_flag, urban_or_rural_area, weather_conditions, age_band_of_casualty, age_of_casualty, bus_or_coach_passenger, car_passenger, casualty_class, casualty_home_area_type, casualty_imd_decile, casualty_reference, casualty_severity, casualty_type, pedestrian_location, pedestrian_movement, pedestrian_road_maintenance_worker, sex_of_casualty, vehicle_text
+<pre><code>Warning: The following named parsers don't match the column names: accident_severity, carriageway_hazards, collision_index, collision_reference, collision_year, date, day_of_week, did_police_officer_attend_scene_of_accident, did_police_officer_attend_scene_of_collision, enhanced_collision_severity, first_road_class, first_road_number, junction_control, junction_detail, latitude, legacy_collision_severity, light_conditions, local_authority_district, local_authority_highway, local_authority_ons_district, location_easting_osgr, location_northing_osgr, longitude, lsoa_of_accident_location, lsoa_of_collision_location, number_of_casualties, number_of_vehicles, pedestrian_crossing_human_control, pedestrian_crossing_physical_facilities, police_force, road_surface_conditions, road_type, second_road_class, second_road_number, special_conditions_at_site, speed_limit, time, trunk_road_flag, urban_or_rural_area, weather_conditions, age_band_of_casualty, age_of_casualty, bus_or_coach_passenger, car_passenger, casualty_class, casualty_distance_banding, casualty_home_area_type, casualty_imd_decile, casualty_reference, casualty_severity, casualty_type, enhanced_casualty_severity, lsoa_of_casualty, pedestrian_location, pedestrian_movement, pedestrian_road_maintenance_worker, sex_of_casualty, adjusted_serious, adjusted_slight, injury_based, accident_ref_no, effective_date_of_change, previously_published_value, replacement_value, variable
+NAs introduced by coercion
 NAs introduced by coercion</code></pre>
 </div>
 </div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<div class="sourceCode" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># pip install stats19</span></span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> stats19</span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>ac <span class="op">=</span> stats19.get_stats19(year <span class="op">=</span> <span class="dv">2019</span>, <span class="bu">type</span> <span class="op">=</span> <span class="st">"collision"</span>)</span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>ca <span class="op">=</span> stats19.get_stats19(year <span class="op">=</span> <span class="dv">2019</span>, <span class="bu">type</span> <span class="op">=</span> <span class="st">"cas"</span>)</span>
-<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>ve <span class="op">=</span> stats19.get_stats19(year <span class="op">=</span> <span class="dv">2019</span>, <span class="bu">type</span> <span class="op">=</span> <span class="st">"veh"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># pip install stats19</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> stats19</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>ac <span class="op">=</span> stats19.get_stats19(year <span class="op">=</span> <span class="dv">2019</span>, <span class="bu">type</span> <span class="op">=</span> <span class="st">"collision"</span>)</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>ca <span class="op">=</span> stats19.get_stats19(year <span class="op">=</span> <span class="dv">2019</span>, <span class="bu">type</span> <span class="op">=</span> <span class="st">"cas"</span>)</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>ve <span class="op">=</span> stats19.get_stats19(year <span class="op">=</span> <span class="dv">2019</span>, <span class="bu">type</span> <span class="op">=</span> <span class="st">"veh"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
